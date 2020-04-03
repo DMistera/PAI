@@ -1,0 +1,14 @@
+Celem zadania było była implementacja zachowania prostego formularza w języku Javascript.
+Zadanie zostało rozwiązane zgodnie z instrukcją bez większych problemów. 
+Poznałem funkcję pozwalające na przechodzenie po węzłach w drzewie typu nextSibling, parentNode itp.
+
+- Do pierwotnego sprawdzenia czy wartość jest pusta porównałem długość stringa z 0 oraz sprawdziłem czy nie jest null.
+- checkEmail oraz checkString zwraca true w przypadku poprawnej wartości. Są to też funkcje przekazywane jako parametr do checkStringAndFocus. 
+    Wbrew temu na co wskazywał punkt 21, negacja tych funckji nie była potrzebna. Wystarczyło tylko odpowiednio zanegować warunek if w implementacji funkcji checkStringAndFocus.
+- Aby poprawnie uruchomić fukcję alterRows zauważyłem że strona musi być załadowana by odnalazła elementy. Użyłem do tego callback onload w body oraz stworzyłem oddzielną funkcję oninit().
+
+
+Użyte narzędzia:
+- Strona była testowana w przeglądarce Google Chrome.
+- Jako edytor kodu zastosowałem Visual Studio Code.
+
