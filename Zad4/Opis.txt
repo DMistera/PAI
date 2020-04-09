@@ -1,0 +1,3 @@
+
+Różnica między wyrażeniem lambda a anonimową funkcją jest odniesienie this.
+W eksperymencie, w wyrażeniu lambda this wskazywało na element td a w anonimowej funkcji, this wskazywalo na element input. 

@@ -1,4 +1,3 @@
-Celem zadania było była implementacja zachowania prostego formularza w języku Javascript.
 Zadanie zostało rozwiązane zgodnie z instrukcją bez większych problemów. 
 Poznałem funkcję pozwalające na przechodzenie po węzłach w drzewie typu nextSibling, parentNode itp.
 
@@ -11,4 +10,3 @@ Poznałem funkcję pozwalające na przechodzenie po węzłach w drzewie typu nex
 Użyte narzędzia:
 - Strona była testowana w przeglądarce Google Chrome.
 - Jako edytor kodu zastosowałem Visual Studio Code.
-
