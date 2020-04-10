@@ -1,3 +1,12 @@
 
-Różnica między wyrażeniem lambda a anonimową funkcją jest odniesienie this.
-W eksperymencie, w wyrażeniu lambda this wskazywało na element td a w anonimowej funkcji, this wskazywalo na element input. 
+Zadanie zostało rozwiązane zgodnie z instrukcją bez większych problemów.
+Nigdy nie używałem jQuery dlatego była to dla mnie nowość.
+
+- Po pobraniu XAMPP, strona działa poprawnie w przeglądarkach. Przedtem strona nie działała na Chrome i Firefox.
+- Różnica między wyrażeniem lambda a anonimową funkcją jest odniesienie "this".
+    W eksperymencie, w wyrażeniu lambda this wskazywało na element td a w anonimowej funkcji, this wskazywalo na element input.
+- Zmiana zmiennej row na stałą nie powoduje różnicy w działaniu programu. Dzieje się tak ponieważ zmienna row nie jest nadpisywana (są jedynie wykonywane jej metody).
+- html() traktuje zawartość jako strukturę html a text() konwertuje zawartość do stringa.  
+- Samodzielnie napisany selektor wygląda następująco: $('tr.a :not(.b[href])').addClass('czerwona');
+    Stworzyłem dodatkową klase czerwona by odróżnić to od pozostałych selektorów.
+- Metoda map() dla tablicy wywołuję się da każdego elementu tablicy. Można też zwrócić wartość aby metoda zwróciła tablice zmapowanych wartości.
