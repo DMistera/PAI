@@ -1,0 +1,12 @@
+Zadanie zostało rozwiązane zgodnie z instrukcją bez większych problemów.
+Nigdy nie używałem php dlatego była to dla mnie nowość.
+
+- Jako wartość cookie podałem jego czas do wygaśnięcia.
+- Nie jestem pewny czy dobrze zinterpretowałem punkt 10. W pliku logowanie.php umieściłem wyłącznie kod php do prekierowania użytkownika i wszystko działa poprawnie.
+- Przez dłuższy czas próbowałem pokazać obrazek o dowolnej nazwie. Po nieudanych próbach zauważyłem że obrazek powinien mieć znaną nazwę co znacznie ułatwiło rozwiązanie.
+- W pliku funkcje.php stworzyłem funkcję pomocniczną checkOsoba do sprawdzenia czy dany login i hasło należą do osoby.
+- Aby sprawdzić czy logowanie przebiegło pomyślnie, sprawdziłem czy ustawiona została zmienna zalogowanyImie.
+
+Użyte narzędzia:
+- Strona była testowana w przeglądarce Google Chrome.
+- Jako edytor kodu zastosowałem Visual Studio Code.

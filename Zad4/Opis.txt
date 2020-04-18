@@ -10,3 +10,7 @@ Nigdy nie używałem jQuery dlatego była to dla mnie nowość.
 - Samodzielnie napisany selektor wygląda następująco: $('tr.a :not(.b[href])').addClass('czerwona');
     Stworzyłem dodatkową klase czerwona by odróżnić to od pozostałych selektorów.
 - Metoda map() dla tablicy wywołuję się da każdego elementu tablicy. Można też zwrócić wartość aby metoda zwróciła tablice zmapowanych wartości.
+
+Użyte narzędzia:
+- Strona była testowana w przeglądarce Google Chrome.
+- Jako edytor kodu zastosowałem Visual Studio Code.
