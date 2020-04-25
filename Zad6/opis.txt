@@ -1,0 +1,20 @@
+Szanowny Panie Doktorze,
+
+Zadanie 6 z Podstaw Aplikacji Internetowych zamieściłem w moim repozytorium: https://github.com/DMistera/PAI
+
+Zadanie zostało rozwiązane zgodnie z instrukcją bez większych problemów.
+Nigdy wcześniej nie używałem konsoli phpMyAdmin
+
+- Różnica w pobieraniu krotek między plikiem 02 a 03 jest taka, że w pliku 02 odwoływano się do atrybutu poprzez indeks a w pliku 03 odwoływano się do atrybutu poprzez jego nazwę.
+- Poprzednie rozwiązania pobierały wiersze tako tablice. Plik 04 tworzy za to obiekt o odpowiadających atrybutach.
+- Plik 05 pokazuję mechanikę przygotowania zapytania bardzo podobną do PreparedStatement w JDBC w języku Java.
+- W trakcie testowania pliku 06 dostrzegłem że można dodać osobę o zajętym już id. Wtedy dana osoba jest dodana do bazy danych i wyskakuję błąd.
+- Rozdzieliłem kod pliku 06 wedle zalecenia. W celu wyświetlenia komunikatu z błędem zastosowałem zmienną sesji.
+
+Użyte narzędzia:
+- Strona była testowana w przeglądarce Google Chrome.
+- Jako edytor kodu zastosowałem Visual Studio Code.
+- Do uruchomienia serwera zastosowałem XAMPP Control Panel
+
+Z poważaniem,
+Dominik Mistera 136773 L5
