@@ -1,0 +1,20 @@
+﻿@{
+    var rules = (List<string>)Session["Rules"];
+    if (rules == null) {
+        rules = new List<string>();
+    }
+    if (IsPost) {
+        rules.Add(Request.Form["rule"]);
+        Session["Rules"] = rules;
+    }
+    Response.Redirect("RulesGet.cshtml");
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿@{
+    var rules = (List<string>)Session["Rules"];
+    if (rules == null) {
+        rules = new List<string>();
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <ol>
+        @foreach (var rule in rules) {
+            <li>@rule</li>
+        }
+    </ol>
+    <a href="RulesPost.cshtml">Add rule</a>
+</body>
+</html>
