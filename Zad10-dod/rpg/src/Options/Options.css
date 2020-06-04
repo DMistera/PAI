@@ -1,0 +1,10 @@
+.option:hover {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+}
