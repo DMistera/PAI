@@ -424,7 +424,7 @@
         "options": [
             {
                 "text": "Przyczytaj pergamin",
-                "next": "poem-2"
+                "next": "note-1"
             },
             {
                 "text": "Zawróc",
@@ -878,7 +878,7 @@
 
     {
         "id": "ghost-14",
-        "text": "Wbijasz miecz w serce mężczyzny. Miecz przechodzi w ciało mężczyzny bez żadnego oporu. Nie dostrzegasz żadnej krwi, jednak mężczyzna wydał głośny i nienaturalny krzyk tak że instynktownie zasłaniasz swoje uszy. Mężczyzna stał się biały jak śnieg i nagle... wyparował w powietrze. Tak jakby go nigdy nie było.\n\n Zamiast niego pojawiło się berło. Nie miało prawie żadnych ozdób ale z jakiegoś powodu emanowało potęgą. Nagle usłyszałeś znajomy głos w swojej głowie, ten sam głos który przywitał cię przed wejściem do labiryntu:\n\n\"It is the sovereign who empowers the sceptre. Not the other way round.\"",
+        "text": "Wbijasz miecz w serce mężczyzny. Miecz przechodzi w ciało mężczyzny bez żadnego oporu. Nie dostrzegasz żadnej krwi, jednak mężczyzna wydał głośny i nienaturalny krzyk tak że instynktownie zasłaniasz swoje uszy. Mężczyzna stał się biały jak śnieg i nagle... wyparował w powietrze. Tak jakby go nigdy nie było.\n\n Zamiast niego pojawiło się berło. Nie miało prawie żadnych ozdób ale z jakiegoś powodu emanowało potęgą. Nagle usłyszałeś znajomy głos w swojej głowie, ten sam głos który przywitał cię przed wejściem do labiryntu:\n\n\"To władca wzmacnia berło. Nie na odwrót.\"",
         "next": "end-1"
     },
 
@@ -920,6 +920,15 @@
             }
         ]
     },
+
+    {
+        "id": "note-1",
+        "text": "Noc tysiąca wstążek\nAby przypomnieć sobie dzień tysiąca płomieni\nKiedy Sarn spalił się\nI narodził się ponownie.",
+        "options": {
+            "text": "Wróć.",
+            "next": "lab-w-3"
+        }
+    }
 
     {
         "id": "game-over",
