@@ -15,6 +15,11 @@ class Options extends React.Component {
                 this.props.onSetFlag(flag);
             });
         }
+        if(option.consumes) {
+            option.consumes.forEach(flag => {
+                this.props.onRemoveFlag(flag);
+            })
+        }
         if(option.next) {
             this.props.onNext(option.next);
         }
@@ -37,6 +42,31 @@ class Options extends React.Component {
         }
     }
 
+    checkFlags(flags) {
+        return !flags.some(flag => {
+            return !this.props.checkFlag(flag);
+        });
+    }
+
+    shouldShow(option) {
+        if(option.conditions) {
+            if(!this.checkFlags(option.conditions)) {
+                return false;
+            }
+        }
+        if(option.not) {
+            if(this.checkFlags(option.not)) {
+                return false;
+            }
+        }
+        if(option.consumes) {
+            if(!this.checkFlags(option.consumes)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     render() {
         let items;
         if(this.props.options == null) {
@@ -45,9 +75,14 @@ class Options extends React.Component {
             ]
         }
         else {
-            items = this.props.options.map((option, index) => {
-                return <span key={index} className="option" onClick={() => {this.handleClick(option)}}>{option.text}</span>
-            })
+            items = [];
+            this.props.options.forEach((option, index) => {
+                if(this.shouldShow(option)) {
+                    items.push(
+                        <span key={index} className="option" onClick={() => {this.handleClick(option)}}>{option.text}</span>
+                    )
+                }
+            });
         }
 
         return (

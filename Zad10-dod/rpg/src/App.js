@@ -18,17 +18,24 @@ class App extends React.Component {
     this.continue = this.continue.bind(this);
     this.setNode = this.setNode.bind(this);
     this.setFlag = this.setFlag.bind(this);
+    this.removeFlag = this.removeFlag.bind(this);
+    this.checkFlag = this.checkFlag.bind(this);
   }
 
   setNode(id) {
+    const nextNode = this.findNode(id);
+    if(nextNode.set) {
+      nextNode.set.forEach(flag => {
+        this.setFlag(flag);
+      })
+    }
     this.setState(prev => {
-      prev.node = this.findNode(id);
+      prev.node = nextNode;
       if(id === "start") {
         prev.flags = [];
       }
       return prev;
     })
-    console.log(this.state.flags);
   }
 
   findNode(id) {
@@ -59,6 +66,16 @@ class App extends React.Component {
     }
   }
 
+  removeFlag(flag) {
+    var copy = [...this.state.flags]; // make a separate copy of the array
+    var index = copy.indexOf(flag);
+    copy.splice(index, 1);
+    this.setState(prev => {
+      prev.flags = copy;
+      return prev;
+    });
+  }
+
   checkFlag(flag) {
     return this.state.flags.find(f => {return f === flag}) != null;
   }
@@ -77,7 +94,7 @@ class App extends React.Component {
       <main>
         <h2>Labirynt RPG</h2>
         <StoryText text={this.state.node.text} />
-        <Options options={this.state.node.options} onContinue={this.continue} onNext={this.setNode} onSetFlag={this.setFlag}></Options>
+        <Options options={this.state.node.options} onContinue={this.continue} onNext={this.setNode} onSetFlag={this.setFlag} onRemoveFlag={this.removeFlag} checkFlag={this.checkFlag}></Options>
       </main>
     );
   }
